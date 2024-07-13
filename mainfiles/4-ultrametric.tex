@@ -1,0 +1,43 @@
+%!TEX root = ../kursovaya.tex
+
+\section{Невыполнение ультраметрического неравенства}
+Для облака $[\Delta_{1}]$ справедливо ультраметрическое неравнество(Замечание
+1.4). Следующая лемма показывает, что для облака $[\mathbb[R]]$
+это неравенство может не выполняться. \\
+Рассмотрим $\mathbb{R}$ как подмножество
+$\mathbb{R}^2$ и добавим к нему точку $(0,1)$, расстояние до которой будет
+соответствовать манхэттенской метрике в $\mathbb{R}^2$. Обозначим это
+пространство $\widetilde{\mathbb{R}}$.
+\begin{theorem}
+\begin{enumerate}
+\itemПространства $\mathbb{Z}$ и $\widetilde{\mathbb{R}}$ находятся от $\mathbb{R}$
+на расстоянии\\ не большем $\frac 1 2$.
+\item Расстояние между $\mathbb{Z}$ и $\widetilde{\mathbb{R}}$ строго
+больше $\frac 1 2$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Вложением целых чисел в вещественную прямую получается реализация $\mathbb{Z}$, $\mathbb{R}$ с расстоянием Хаусдорфа равным $\frac 1 2$.
+Если вложить $\widetilde{\mathbb{R}}$ в $\mathbb{R}^{2}$ естественным образом, а $\mathbb{R}$ вложить как подмножество равное $\{(x, \frac1 2 )|x\in \mathbb{R}\}$,
+расстояние Хаусдорва между ними также будет равно $\frac 1 2$. Таким образом, первое утверждение теоремы доказано. \\
+Пусть $R$ --- соответствие
+между $\mathbb{Z}$ и $\widetilde{\mathbb{R}}$, $\dis R < 1 + \epsilon$ и
+$\big(i, (0,1)\big) \in R$. Тогда, если
+$x \in \mathbb{R}\backslash(-\epsilon, \epsilon)$, то $(i, x) \notin R$.
+Обозначим за $\mathcal{N}$ множество всех $k \in \mathbb{Z}$ таких, что для всех
+$x \in \mathbb{R}\backslash(-\epsilon, \epsilon)$, $(k,x) \notin R$.
+$\mathcal{N}$ не пусто и не равно $\mathbb{Z}$, следовательно, по лемме 3.1,
+расстояние от $\mathbb{Z} \backslash \mathcal{N}$ до $\mathbb{R}$ будет не
+меньше 1. Рассмотрим подмножество соответствия $R$,
+$R' := R \backslash \{(k,x): x\in (-\epsilon, \epsilon), k \in \mathbb{Z}\} \cup \{\big(i, (0,1)\big)\}$.
+Так как все точки из $\mathbb{R}\backslash(-\epsilon, \epsilon)$ лежат в $R$
+только в паре с точками из $ \mathbb{Z} \backslash \mathcal{N}$ и наоборот,
+множество $R'$ будет соответствием между
+$\mathbb{R}\backslash(-\epsilon, \epsilon)$ и
+$ \mathbb{Z} \backslash \mathcal{N}$  Тогда,
+$\dis R \ge \dis R' \ge 2d_{GH}(\mathbb{R}\backslash(-\epsilon, \epsilon), \mathbb{Z} \backslash \mathcal{N})$
+По неравенству треугольника
+$2d_{GH}(\mathbb{R}\backslash(-\epsilon, \epsilon), \mathbb{Z} \backslash \mathcal{N}) \ge 2|d_{GH}(\mathbb{R}, \mathbb{Z} \backslash \mathcal{N}) - d_{GH}(\mathbb{R}\backslash(-\epsilon, \epsilon), \mathbb{R})| \ge 2 - 2\epsilon$,
+что при малых $\epsilon$ больше, чем $1 + \epsilon$. Получаем, что
+$d_{GH}(\widetilde{\mathbb{R}}, \mathbb{Z}) > \frac{1}{2}$.
+\end{proof}
