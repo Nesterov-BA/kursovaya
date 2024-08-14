@@ -274,3 +274,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+.vscode/settings.json
+kursovaya.bbl-SAVE-ERROR
+kursovaya.bcf-SAVE-ERROR
+kursovaya.bcf-SAVE-ERROR
